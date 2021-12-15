@@ -11,6 +11,7 @@
  - **proto**：存放通信协议文件（.proto）
  - **storage**：存放数据库协议文件（.proto）
  - **tools**：存放工具文件
+ - **client**：模拟客户端测试文件
  - **start.sh**：启动服务的脚本（本质就是./skynet [配置]）
 
 ### 编译skynet
