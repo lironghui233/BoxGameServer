@@ -1,0 +1,1 @@
+protoc --descriptor_set_out playerdata.pb playerdata.proto

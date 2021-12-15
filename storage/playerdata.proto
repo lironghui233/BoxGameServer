@@ -1,0 +1,76 @@
+package playerdata;
+
+// 基础信息
+message baseinfo {
+	required int32 playerid = 1;
+	required int32 hp = 2;
+	required int32 coin = 3;
+	required string name = 4;
+	required int32 level = 5;
+	required int32 last_login_time = 6;
+	required int32 skin = 7 [default = 10];
+}
+
+// 背包物品
+message bag_item
+{
+    required uint32 uid = 1; // 物品id
+    required uint32 num = 2; // 物品数量
+    optional bool bind = 3; // 绑定标识
+    optional uint32 varied_id = 4; // 多变id
+    optional uint32 source_id = 5; // 来源标识
+}
+
+// 背包格子
+message bag_slot
+{
+    required uint32 uid = 1; // 标识- 格子位置
+    optional bag_item attach = 2; // 装载物品
+}
+
+// 背包
+message bag {
+	repeated bag_slot slots = 1; // 背包格子
+}
+
+message task_info {
+	required int32 id = 1;
+	required bool is_finish = 2;
+}
+
+message task {
+	repeated task_info tasks = 1;
+}
+
+message friend_info {
+	required int32 id = 1;
+}
+
+message friend {
+	repeated friend_info friends = 1;
+}
+
+message mail_info {
+	required int32 id = 1;
+	required string content = 2;
+}
+
+message mail {
+	repeated mail_info mails = 1;
+}
+
+message achieve_info {
+	required int32 id = 1;
+}
+
+message achieve {
+	repeated achieve_info achieves = 1;
+}
+
+message title_info {
+	required int32 id = 1;
+}
+
+message title {
+	repeated title_info titles = 1;
+}

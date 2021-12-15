@@ -1,0 +1,9 @@
+// @id=10
+message enter_req {
+
+}
+
+// @id=11
+message enter_result {
+	required int32 result = 1;
+}

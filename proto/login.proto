@@ -1,0 +1,12 @@
+// @id=1
+message login_req {
+	required int32 id = 1;
+	required string pw = 2;
+	optional int32 result = 3;
+}
+
+// @id=2
+message login_resp {
+	required int32 id = 1;
+	required int32 result = 2;
+}

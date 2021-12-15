@@ -1,0 +1,6 @@
+return {
+	[1] = "login_req",
+	[2] = "login_resp",
+	[10] = "enter_req",
+	[11] = "enter_result",
+}

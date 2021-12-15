@@ -1,0 +1,1 @@
+../skynet/3rd/lua/lua ./netpack_client_test.lua
